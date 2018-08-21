@@ -55,6 +55,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000/'
+)
+
 ROOT_URLCONF = 'activity_django.urls'
 
 TEMPLATES = [
@@ -85,7 +89,8 @@ DATABASES = {
         'NAME': 'outdoor',
         'USER': 'outdooruser',
         'PASSWORD': 'outdoor',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '5431',
     }
 }
 
