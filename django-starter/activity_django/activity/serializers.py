@@ -7,7 +7,6 @@ class ActivitySerializer(serializers.HyperlinkedModelSerializer):
     	fields = ('id', 'name', 'photo_url', 'features',)
 
 
-
 class FeatureSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Feature
