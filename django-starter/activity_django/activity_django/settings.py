@@ -56,10 +56,14 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:3000/'
+    'http://localhost:3000/'
 )
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+
+
+
+# CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'activity_django.urls'
 
